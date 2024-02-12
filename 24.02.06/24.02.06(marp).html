@@ -143,9 +143,7 @@
 <h3 id="322-%ED%94%84%EB%A0%88%EC%A0%A0%ED%85%8C%EC%9D%B4%EC%85%98-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%8D%BC%EC%8B%9C%EC%8A%A4%ED%84%B4%EC%8A%A4-%EA%B3%84%EC%B8%B5-%EB%A7%8C%EB%93%A4%EA%B8%B0">3.2.2 프레젠테이션, 서비스, 퍼시스턴스 계층 만들기</h3>
 <h4 id="%ED%94%84%EB%A0%88%EC%A0%A0%ED%85%8C%EC%9D%B4%EC%85%98-%EA%B3%84%EC%B8%B5---%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC-testcontrollerjava-%EB%82%B4%EC%9A%A9-%EC%88%98%EC%A0%95">프레젠테이션 계층 - 컨트롤러: <code>TestController.java</code> 내용 수정</h4>
 <div style="font-size: 25px">
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">package</span> me.younghoon.springbootdeveloper;
-
-<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.GetMapping;
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.GetMapping;
 <span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RestController;
 
 <span class="hljs-meta">@RestController</span>
@@ -166,9 +164,7 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-heading-divider="3" lang="ko-KR" data-marpit-pagination="19" style="--paginate:true;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;--heading-divider:3;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;" data-marpit-pagination-total="40">
 <h4 id="%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%EA%B3%84%EC%B8%B5---%EC%84%9C%EB%B9%84%EC%8A%A4-testservicejava">비즈니스 계층 - 서비스: <code>TestService.java</code></h4>
 <div style="font-size: 25px">
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">package</span> me.younghoon.springbootdeveloper;
-
-<span class="hljs-meta">@Service</span>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-meta">@Service</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TestService</span> {
 
     <span class="hljs-meta">@Autowired</span>
@@ -191,9 +187,7 @@
 <li>DB에 접근할 때 사용할 객체인 Member DAO를 생성하고, 실제 DB에 접근하는 코드 작성하기</li>
 </ul>
 <div style="font-size: 25px">
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">package</span> me.younghoon.springbootdeveloper;
-
-<span class="hljs-meta">@NoArgsConstructor(access = AccessLevel.PROTECTED)</span>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-meta">@NoArgsConstructor(access = AccessLevel.PROTECTED)</span>
 <span class="hljs-meta">@AllArgsConstructor</span>
 <span class="hljs-meta">@Getter</span>
 <span class="hljs-meta">@Entity</span>
@@ -216,9 +210,7 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-paginate="true" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-heading-divider="3" lang="ko-KR" data-marpit-pagination="22" style="--paginate:true;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;--heading-divider:3;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;" data-marpit-pagination-total="40">
 <h5 id="%EB%A7%A4%ED%95%91-%EC%9E%91%EC%97%85">매핑 작업</h5>
 <p>인터페이스 파일 필요: <code>MemberRepository.java</code></p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">package</span> me.younghoon.springbootdeveloper;
-
-<span class="hljs-meta">@Repository</span>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-meta">@Repository</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">MemberRepository</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">JpaRepository</span>&lt;Member, Long&gt; {
 }
 </code></pre>
@@ -234,9 +226,7 @@
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-paginate="true" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-heading-divider="3" lang="ko-KR" data-marpit-pagination="24" style="--paginate:true;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;--heading-divider:3;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;" data-marpit-pagination-total="40">
 <p>TestService.java</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">package</span> me.younghoon.springbootdeveloper;
-
-<span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
 <span class="hljs-keyword">import</span> org.springframework.stereotype.Service;
 
 <span class="hljs-keyword">import</span> java.util.List;
@@ -255,9 +245,7 @@
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-paginate="true" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-heading-divider="3" lang="ko-KR" data-marpit-pagination="25" style="--paginate:true;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;--heading-divider:3;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;" data-marpit-pagination-total="40">
 <p>TestController.java</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">package</span> me.younghoon.springbootdeveloper;
-
-<span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
 <span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.GetMapping;
 <span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RestController;
 
@@ -279,9 +267,7 @@
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-paginate="true" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-heading-divider="3" lang="ko-KR" data-marpit-pagination="26" style="--paginate:true;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;--heading-divider:3;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;" data-marpit-pagination-total="40">
 <p>Member.java</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">package</span> me.younghoon.springbootdeveloper;
-
-<span class="hljs-keyword">import</span> jakarta.persistence.*;
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">import</span> jakarta.persistence.*;
 <span class="hljs-keyword">import</span> lombok.AccessLevel;
 <span class="hljs-keyword">import</span> lombok.AllArgsConstructor;
 <span class="hljs-keyword">import</span> lombok.Getter;
@@ -304,10 +290,7 @@
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-paginate="true" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-heading-divider="3" lang="ko-KR" data-marpit-pagination="27" style="--paginate:true;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;--heading-divider:3;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;" data-marpit-pagination-total="40">
 <p>MemberRepository.java</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">package</span> me.younghoon.springbootdeveloper;
-
-
-<span class="hljs-keyword">import</span> org.springframework.data.jpa.repository.JpaRepository;
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">import</span> org.springframework.data.jpa.repository.JpaRepository;
 <span class="hljs-keyword">import</span> org.springframework.stereotype.Repository;
 
 <span class="hljs-meta">@Repository</span>
